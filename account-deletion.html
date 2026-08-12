@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>StarGames — アカウント削除 / Account Deletion / 帳號刪除</title>
+<style>
+  :root { color-scheme: light dark; }
+  * { box-sizing: border-box; }
+  body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP","Noto Sans TC",Roboto,sans-serif; line-height:1.75; color:#1a2333; background:#f4f6fb; }
+  @media (prefers-color-scheme: dark) { body{color:#cfe1ff;background:#05080f;} .card{background:#0e1422!important;border-color:#2b3850!important;} a{color:#5fb4ff;} .step{background:#1a2436!important;} }
+  .wrap { max-width:820px; margin:0 auto; padding:24px 18px 80px; }
+  .card { background:#fff; border:1px solid #dbe2f0; border-radius:14px; padding:28px 26px; }
+  h1 { font-size:1.6rem; margin:0 0 4px; }
+  h2 { font-size:1.2rem; margin:28px 0 8px; padding-top:6px; border-top:1px solid rgba(128,128,128,.2); }
+  h2:first-of-type { border-top:none; }
+  .sub { opacity:.7; font-size:.9rem; margin-bottom:18px; }
+  .langbar { position:sticky; top:0; z-index:5; display:flex; gap:8px; padding:12px 0; background:linear-gradient(#f4f6fb,#f4f6fbdd); }
+  @media (prefers-color-scheme: dark){ .langbar{background:linear-gradient(#05080f,#05080fdd);} }
+  .langbar button { font:inherit; cursor:pointer; padding:6px 16px; border-radius:999px; border:1px solid #5f7da8; background:transparent; color:inherit; }
+  .langbar button.active { background:#3e88ff; border-color:#3e88ff; color:#fff; }
+  .step { background:#eef1f7; border-radius:10px; padding:12px 16px; margin:8px 0; }
+  table { width:100%; border-collapse:collapse; margin:8px 0; font-size:.95rem; }
+  th,td { text-align:left; padding:8px 10px; border-bottom:1px solid rgba(128,128,128,.25); vertical-align:top; }
+  .ok { color:#2e9e6b; font-weight:600; } .keep { color:#c67a1e; font-weight:600; }
+  @media (prefers-color-scheme: dark){ .ok{color:#5cffae;} .keep{color:#ffb453;} }
+  section[hidden] { display:none; }
+  .note { font-size:.85rem; opacity:.7; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="langbar">
+    <button data-lang="ja" class="active" onclick="setLang('ja')">日本語</button>
+    <button data-lang="en" onclick="setLang('en')">English</button>
+    <button data-lang="zh" onclick="setLang('zh')">繁體中文</button>
+  </div>
+  <div class="card">
+
+  <!-- 日本語 -->
+  <section data-lang="ja">
+    <h1>アカウントとデータの削除</h1>
+    <div class="sub">StarGames · IdeaDreamGames（IdeaDream Media HK Co., Limited）</div>
+    <p>StarGames のアカウントと関連データはいつでも削除できます。</p>
+
+    <h2>方法1：ゲーム内で削除（推奨・即時）</h2>
+    <div class="step">1. ゲームを起動し、画面右上の設定（⚙）を開く</div>
+    <div class="step">2.「アカウント」→「アカウント削除」をタップ</div>
+    <div class="step">3. 確認のため <code>DELETE</code> と入力し、「確認して完全削除」をタップ</div>
+    <p>これによりアカウントは<b>即座かつ完全に</b>削除されます。</p>
+
+    <h2>方法2：ウェブから削除を請求</h2>
+    <p>ゲームにアクセスできない場合は、以下の宛先に、登録した<b>ユーザー名</b>を明記のうえメールでご請求ください。本人確認ののち <b>30 日以内</b>に削除します。</p>
+    <p>宛先：<a href="mailto:business@ideadream.games?subject=StarGames%20Account%20Deletion">business@ideadream.games</a>（件名：Account Deletion）</p>
+
+    <h2>削除されるデータ／保持されるデータ</h2>
+    <table>
+      <tr><th>データ</th><th>取り扱い</th></tr>
+      <tr><td>アカウント（ユーザー名・パスワード・Google 連携識別子）</td><td class="ok">完全に削除</td></tr>
+      <tr><td>ゲーム進行（資源・建築・研究・戦績など）</td><td class="ok">完全に削除</td></tr>
+      <tr><td>購入・取引記録</td><td class="keep">仮名化して保持（個人と紐づけ不可）— 会計・税務・返金対応のため 5 年間</td></tr>
+    </table>
+
+    <p class="note">連絡先：IdeaDreamGames（IdeaDream Media HK Co., Limited） / business@ideadream.games</p>
+  </section>
+
+  <!-- English -->
+  <section data-lang="en" hidden>
+    <h1>Delete Your Account and Data</h1>
+    <div class="sub">StarGames · IdeaDreamGames（IdeaDream Media HK Co., Limited）</div>
+    <p>You can delete your StarGames account and associated data at any time.</p>
+
+    <h2>Option 1: Delete in-game (recommended, immediate)</h2>
+    <div class="step">1. Launch the game and open Settings (⚙) at the top-right.</div>
+    <div class="step">2. Tap "Account" → "Delete Account".</div>
+    <div class="step">3. Type <code>DELETE</code> to confirm, then tap "Confirm permanent deletion".</div>
+    <p>Your account is deleted <b>immediately and permanently</b>.</p>
+
+    <h2>Option 2: Request deletion by web</h2>
+    <p>If you cannot access the game, email us with your registered <b>username</b>. After verifying your identity, we will delete your data <b>within 30 days</b>.</p>
+    <p>Email: <a href="mailto:business@ideadream.games?subject=StarGames%20Account%20Deletion">business@ideadream.games</a> (subject: Account Deletion)</p>
+
+    <h2>What is deleted / retained</h2>
+    <table>
+      <tr><th>Data</th><th>Handling</th></tr>
+      <tr><td>Account (username, password, Google link identifier)</td><td class="ok">Fully deleted</td></tr>
+      <tr><td>Game progress (resources, buildings, research, stats)</td><td class="ok">Fully deleted</td></tr>
+      <tr><td>Purchase / transaction records</td><td class="keep">Retained pseudonymized (not linkable to you) for accounting, tax, and refunds — 5 years</td></tr>
+    </table>
+
+    <p class="note">Contact: IdeaDreamGames（IdeaDream Media HK Co., Limited） / business@ideadream.games</p>
+  </section>
+
+  <!-- 繁體中文 -->
+  <section data-lang="zh" hidden>
+    <h1>刪除您的帳號與資料</h1>
+    <div class="sub">StarGames · IdeaDreamGames（IdeaDream Media HK Co., Limited）</div>
+    <p>您可隨時刪除 StarGames 帳號及相關資料。</p>
+
+    <h2>方式一：遊戲內刪除（建議・即時）</h2>
+    <div class="step">1. 開啟遊戲，點右上角設定（⚙）。</div>
+    <div class="step">2. 點「帳號」→「刪除帳號」。</div>
+    <div class="step">3. 輸入 <code>DELETE</code> 確認，再點「確認永久刪除」。</div>
+    <p>帳號將<b>當場永久</b>刪除。</p>
+
+    <h2>方式二：網頁申請刪除</h2>
+    <p>若無法進入遊戲，請以電子郵件註明您註冊的<b>使用者名稱</b>向我們申請。完成身分確認後，我們將於 <b>30 日內</b>刪除您的資料。</p>
+    <p>信箱：<a href="mailto:business@ideadream.games?subject=StarGames%20Account%20Deletion">business@ideadream.games</a>（主旨：Account Deletion）</p>
+
+    <h2>會刪除／會保留的資料</h2>
+    <table>
+      <tr><th>資料</th><th>處理方式</th></tr>
+      <tr><td>帳號（使用者名稱、密碼、Google 綁定識別碼）</td><td class="ok">完全刪除</td></tr>
+      <tr><td>遊戲進度（資源、建築、科技、戰績）</td><td class="ok">完全刪除</td></tr>
+      <tr><td>購買／交易紀錄</td><td class="keep">假名化保留（無法連回您本人）— 供會計、稅務、退款用 5 年</td></tr>
+    </table>
+
+    <p class="note">聯絡：IdeaDreamGames（IdeaDream Media HK Co., Limited） / business@ideadream.games</p>
+  </section>
+
+  </div>
+  <p class="note" style="text-align:center;margin-top:16px;">© 2026 IdeaDreamGames（IdeaDream Media HK Co., Limited）</p>
+</div>
+<script>
+  function setLang(l){
+    document.documentElement.lang = l === 'zh' ? 'zh-Hant' : l;
+    document.querySelectorAll('section[data-lang]').forEach(s => s.hidden = (s.dataset.lang !== l));
+    document.querySelectorAll('.langbar button').forEach(b => b.classList.toggle('active', b.dataset.lang === l));
+    window.scrollTo(0,0);
+  }
+</script>
+</body>
+</html>
